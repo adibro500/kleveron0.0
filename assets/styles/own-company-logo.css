@@ -1,0 +1,40 @@
+﻿.dash_logo {
+    display: none;
+}
+
+.cmpny_logo {
+    background: #333 none repeat scroll 0 0;
+    height: 75px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1366px) {
+    .cmpny_logo {
+        padding: 15px 0;
+        height: 65px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cmpny_logo {
+        height: 55px;
+    }
+}
+
+.menu_footer {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 16px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+    .menu_footer b {
+        color: #017db9;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 5px;
+    }

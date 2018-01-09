@@ -1,0 +1,859 @@
+﻿/*  dashboard outer */
+
+.dash_wrapper {
+    position: relative;
+}
+
+.dash_menubar {
+    height: 100%;
+    position: relative;
+    transition: all 0.4s ease 0s;
+    width: 270px;
+}
+
+.dash_bars {
+    display: inline-block;
+    padding-left: 32px;
+    padding-right: 50px;
+    vertical-align: middle;
+}
+
+.mob_head {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dash_bars i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dash_logo {
+    position: fixed;
+    width: 270px;
+    z-index: 9999;
+}
+
+.dash_side_menu {
+    background: #edf2f8 none repeat scroll 0 0;
+    color: #333333;
+    margin-top: 75px;
+    z-index: 999;
+}
+
+.dash_content_wrap {
+    padding-left: 270px;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    position: absolute;
+}
+
+.dash_header {
+    background-color: #017db9;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
+    height: 75px;
+    left: 270px;
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease 0s;
+    z-index: 9;
+}
+
+.hidemenu .dash_header {
+    left: 0px;
+}
+
+.hidemenu .dash_content_wrap {
+    padding-left: 110px;
+}
+
+.hidemenu .dash_menubar {
+    width: 110px;
+    z-index: 9;
+    transition: all 0.4s ease 0s;
+}
+
+.hidemenu .dash_side_menu .dash_menu span {
+    display: none;
+}
+
+.hidemenu .dash_side_menu .dash_menu .icon-img {
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.dash_header a {
+    color: #ffffff;
+}
+
+.dash_header .header-rightside {
+    padding-right: 15px;
+}
+
+.dash_header .notify-drop {
+    min-width: 330px;
+    background-color: #fff;
+    min-height: 360px;
+    max-height: 360px;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.dash_header .notify-drop-title {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 5px 15px 10px 15px;
+}
+
+.dash_header .drop-content {
+    min-height: 280px;
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 0px;
+}
+
+.dash_header .notify-drop .fa, .dash_header .notify-drop a {
+    color: #333333;
+    font-weight: 500;
+}
+
+.dash_header .notify-drop p {
+    font-size: 12px;
+    line-height: 17px;
+    padding-bottom: 8px;
+}
+
+.dash_header h1 {
+    font-size: 26px;
+    line-height: 37px;
+    color: #ffffff;
+    padding: 5px 0;
+}
+
+.dash_side_menu .dash_menu li:hover {
+    border-left: 3px solid #f09537;
+}
+
+.dash_side_menu .dash_menu li a {
+    margin: 0 25px;
+}
+
+.dash_side_menu .dash_menu .icon-img {
+    margin-bottom: 10px;
+}
+
+.upld_btn .btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 30px;
+}
+
+.upld_btn > a {
+    display: none;
+}
+
+.dash_header .list-inline > li:nth-child(2) {
+    border-left: none;
+}
+
+.dash_menu li {
+    border-left: 3px solid transparent;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease 0s;
+}
+
+    .dash_menu li a {
+        border-bottom: 1px solid #ced0da;
+        color: #333333;
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 35px;
+        padding: 25px 10px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+        z-index: 2;
+    }
+
+.dash_menu .icon-img {
+    display: block;
+    margin-bottom: 10px;
+    width: 44px;
+}
+
+.dash_menu li.active {
+    border-left: 3px solid #f09537;
+    transition: border-left 250ms ease-in-out 0s;
+}
+
+    .dash_menu li.active a {
+        color: #f09537;
+    }
+
+.dash_menu li:hover a {
+    color: #f09537;
+    transition: color 250ms ease-in-out 0s, background-color 250ms ease-in-out 0s;
+}
+
+.dash_side_menu .dash_menu > li {
+    position: relative;
+}
+
+    .dash_side_menu .dash_menu > li > .dash_sub_menu {
+        background-color: #E0E6ED;
+        box-shadow: none;
+        left: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.1s linear 0s;
+        visibility: hidden;
+        z-index: 9;
+        width: 200px;
+    }
+
+    .dash_side_menu .dash_menu > li:hover > .dash_sub_menu {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .dash_side_menu .dash_menu > li > .dash_sub_menu > li {
+        list-style: outside none none;
+        padding: 0;
+        border-left: 0;
+    }
+
+        .dash_side_menu .dash_menu > li > .dash_sub_menu > li > a {
+            color: #333;
+            margin: 0 10px;
+            padding: 10px 0;
+            text-transform: inherit;
+        }
+
+        .dash_side_menu .dash_menu > li > .dash_sub_menu > li:last-child > a {
+            border-bottom: 0;
+        }
+
+        .dash_side_menu .dash_menu > li > .dash_sub_menu > li:hover > a {
+            color: #f09537;
+            transition: color 250ms ease-in-out 0s, background-color 250ms ease-in-out 0s;
+        }
+
+.hidemenu .dash_menu li:hover span {
+    background: #d7dbdf none repeat scroll 0 0;
+    color: #333;
+    display: inline-block;
+    font-weight: 500;
+    left: 84%;
+    padding: 10px 0;
+    position: relative;
+    top: 0;
+    width: 200px;
+    z-index: 1;
+    border-bottom: 1px solid #f09537;
+}
+
+.hidemenu .dash_side_menu .dash_menu > li > .dash_sub_menu {
+    top: 72%;
+}
+/*  end dashboard outer */
+
+/*  dashboard inner */
+
+/*  my jobs */
+
+.my_job_nav.detail_nav_menu ul li {
+    padding: 23px 25px;
+}
+
+.detail_nav_menu ul {
+    border-bottom: 0 !important;
+}
+
+.nav_bord {
+    border-bottom: 2px solid #e0e1f3;
+}
+
+.crt_job_btn {
+    padding-top: 25px;
+    text-align: right;
+}
+
+    .crt_job_btn .btn {
+        background-color: transparent;
+        border: 1px solid #333;
+        border-radius: 50px;
+        color: #333;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 5px 30px;
+    }
+
+        .crt_job_btn .btn:hover, .crt_job_btn .btn.active, .crt_job_btn .btn:focus {
+            color: #000;
+        }
+
+.post_hdr h4 {
+    padding: 20px 0;
+    font-weight: 400;
+}
+
+.post_srch label.lbl_hdr {
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 15px;
+    width: 20%;
+}
+
+.post_srch label.lbl_box {
+    float: left;
+    width: 80%;
+}
+
+.post_srch select.cmn_input {
+    height: 27px;
+}
+
+.post_srch .cmn_input {
+    border-radius: 0;
+    color: #bababa;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0;
+    border-bottom: 1px solid #dce5e9;
+}
+
+.post_srch .selectdiv::after {
+    right: 20px;
+    top: -12px;
+}
+
+.search_box .input-group-addon.custom_icn {
+    border: medium none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+.search_box *::-moz-placeholder {
+    color: #bababa;
+}
+
+.search_box .input-group-addon {
+    color: #C7D0D8;
+}
+
+.search_box .input-group {
+    width: 80%;
+    float: left;
+}
+
+    .search_box .input-group .cmn_input {
+        height: 27px;
+    }
+
+.search_box .lbl_hdr {
+    display: inline-block;
+}
+
+.job_detail {
+    padding-top: 40px;
+}
+
+.rm_grid {
+    padding: 15px 0;
+}
+
+.bord_rt {
+    border-right: 1px solid #DCE5E9;
+}
+
+.border_top {
+    border-top: 1px solid #DCE5E9;
+}
+
+.border_btm {
+    border-bottom: 1px solid #DCE5E9;
+}
+
+h4.lbl_name {
+    line-height: 24px;
+}
+
+h6.lbl_name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.user_box {
+    padding: 8px 0;
+    text-align: center;
+}
+
+    .user_box i {
+        font-size: 26px;
+        color: #b2b2b2;
+    }
+
+.inline_icn {
+    padding: 10px 0;
+    text-align: center;
+}
+
+    .inline_icn span {
+        padding: 0 15px;
+    }
+
+        .inline_icn span i {
+            color: #b2b2b2;
+            font-size: 22px;
+        }
+
+.hide_option {
+    display: none;
+}
+/*  end my jobs */
+/* time & expense */
+.grid_hdr {
+    padding: 28px 0;
+}
+
+    .grid_hdr h4 {
+        font-size: 20px;
+    }
+
+.time_expns_detail {
+    padding-top: 20px;
+}
+
+.lbl_value b {
+    font-weight: 500;
+}
+
+.lbl_name .green_txt {
+    color: green;
+}
+.lbl_name .red_txt {
+    color: red;
+}
+.time_expns_detail .inline_icn span {
+    padding: 5px;
+}
+/*  end dashboard inner */
+@media screen and (max-width: 1440px) {
+    .dash_header h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dash_menu {
+        padding: 10px 0px 10px 0px;
+    }
+
+        .dash_menu li h3 {
+            font-size: 24px;
+            padding: 10px 0px;
+        }
+
+        .dash_menu li a {
+            padding: 20px 10px;
+            font-size: 14px;
+        }
+
+        .dash_menu .icon-img {
+            width: 38px;
+        }
+
+    .hidemenu .dash_side_menu .dash_menu > li > .dash_sub_menu {
+        top: 74%;
+    }
+    /*  dashboard inner */
+    /*  my jobs */
+
+    .post_srch label.lbl_hdr {
+        width: 30%;
+    }
+
+    .post_srch label.lbl_box {
+        width: 70%;
+    }
+
+    .search_box .input-group {
+        width: 70%;
+    }
+
+    h4.lbl_name {
+        font-size: 16px;
+    }
+
+    .crt_job_btn {
+        padding-top: 22px;
+    }
+    /*  end my jobs */
+}
+
+@media screen and (max-width: 1366px) {
+
+
+    .dash_header {
+        height: 65px;
+        padding: 10px 15px;
+    }
+
+        .dash_header h1 {
+            font-size: 22px;
+        }
+
+    .dash_menu {
+        padding: 4px 0px 10px 0px;
+    }
+
+        .dash_menu li h3 {
+            font-size: 24px;
+            padding: 8px 0px;
+        }
+
+        .dash_menu li h3 {
+            font-size: 22px;
+        }
+
+        .dash_menu li a {
+            font-size: 14px;
+        }
+
+    .dash_side_menu {
+        margin-top: 65px;
+    }
+
+    /*  dashboard inner */
+    /*  my jobs */
+
+    h4.lbl_name {
+        font-size: 15px;
+    }
+
+    .lbl_value {
+        font-size: 13px;
+    }
+    /* end  my jobs */
+    /* time & expense */
+
+    .time_expns_detail .inline_icn span {
+        padding: 0 5px;
+    }
+
+    .time_expns_detail .inline_icn {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .dash_bars {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    /*  dashboard inner */
+    /*  my jobs */
+    .padd_btm {
+        margin-bottom: 15px;
+    }
+
+    .bord_rt {
+        border-right: 0;
+    }
+
+    .mob_brd {
+        border-right: 1px solid #dce5e9;
+    }
+    /*  end my jobs */
+    /* time & expense */
+
+    .time_expns_detail .inline_icn {
+        padding: 8px 0;
+        text-align: left;
+    }
+
+        .time_expns_detail .inline_icn span {
+            padding: 0 25px;
+        }
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    .dash_header {
+        left: 0;
+    }
+
+    .dash_logo {
+        display: none;
+    }
+
+    .dash_menubar {
+        width: 0;
+    }
+
+    .hidemenu .dash_menubar {
+        width: 110px;
+    }
+
+    .dash_menu_nav {
+        display: none;
+    }
+
+    .dash_content_wrap {
+        padding-left: 0;
+    }
+
+    .hidemenu .dash_content_wrap {
+        padding-left: 0;
+    }
+
+    .hidemenu .dash_menu_nav {
+        display: block;
+    }
+
+    .hidemenu .bgwhite {
+        padding-left: 15px !important;
+    }
+
+
+    .dash_side_menu {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* time & expense */
+    .mob_btm {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .dash_header {
+        height: 90px;
+    }
+
+        .dash_header .header-rightside {
+            padding-right: 0;
+            text-align: right;
+        }
+
+    span.user_nm {
+        display: none;
+    }
+
+    .upld_btn > a {
+        display: block;
+    }
+
+    .upld_btn .btn {
+        display: none;
+    }
+
+    .dash_header h1 {
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .fa.fa-pencil {
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .mob_head {
+        float: right;
+    }
+
+    .dash_bars {
+        top: 19px;
+        position: relative;
+    }
+
+    .dash_side_menu {
+        margin-top: 90px;
+    }
+
+
+    /*  dashboard inner */
+
+    /*  my jobs */
+    .padd_btm {
+        text-align: center;
+    }
+
+    h6.lbl_name {
+        display: inline-block;
+        padding-right: 10px;
+    }
+
+    .lbl_value {
+        display: inline-block;
+    }
+
+    .rm_btm {
+        padding-bottom: 15px;
+    }
+
+    .user_dtl h6.lbl_name {
+        display: block;
+        padding-right: 0px;
+    }
+
+    .user_dtl .lbl_value {
+        display: block;
+    }
+
+    h4.lbl_name {
+        font-size: 18px;
+    }
+
+    .detail_nav_menu ul {
+        display: none;
+    }
+
+    .crt_job_btn {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .hide_option {
+        display: block;
+    }
+
+    .show_option {
+        background-color: #333;
+        background-image: none;
+        border: medium none;
+        box-shadow: none;
+        color: #fff;
+        display: block;
+        font-size: 17px;
+        font-weight: 500;
+        height: 44px;
+        line-height: 1.42857;
+        text-align: center;
+        width: 100%;
+        padding: 6px 12px;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    }
+
+    #tab_selector > option {
+        background-color: #f7f7f7;
+        color: #333;
+    }
+
+    .hide_option.selectdiv::after {
+        color: #fff;
+    }
+
+    .nav_bord {
+        border-bottom: 0 none;
+    }
+
+    .post_hdr {
+        text-align: center;
+        border-bottom: 1px solid #E0E1F3;
+    }
+
+    .post_srch {
+        padding: 30px 0;
+    }
+
+    .post_hdr h4 {
+        padding: 0 0 15px 0;
+    }
+
+    .post_srch label.lbl_hdr {
+        width: 15%;
+    }
+
+    .post_srch label.lbl_box {
+        width: 85%;
+        padding-bottom: 15px;
+    }
+
+    .srch_btm {
+        padding-bottom: 10px;
+    }
+
+    .search_box .input-group {
+        width: 85%;
+    }
+
+    .job_detail {
+        padding-top: 0;
+    }
+
+    .user_dtl {
+        text-align: center;
+    }
+    /*  end my jobs */
+
+    /* time & expense */
+    .mob_btm {
+        margin-bottom: 10px;
+    }
+
+    .time_expns_detail .inline_icn {
+        text-align: center;
+    }
+
+    .time_expns_wrapper .post_hdr {
+        border-bottom: 0 none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /*  my jobs */
+    .post_srch label.lbl_hdr {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .post_srch label.lbl_box {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .search_box .input-group {
+        width: 100%;
+    }
+
+    .post_srch .selectdiv::after {
+        top: 15px;
+    }
+
+    /*  end my jobs */
+}
+
+@media screen and (max-width: 412px) {
+    /* time & expense */
+
+    .time_expns_detail .inline_icn {
+        padding: 18px 0;
+    }
+}

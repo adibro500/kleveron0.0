@@ -1,0 +1,36 @@
+﻿.frame_header {
+    background-color: #017db9;
+}
+.aside {
+    background: #edf2f8 none repeat scroll 0 0;
+}
+.menu li.active a, .menu li:hover a {
+    color: #f29634;
+}
+
+
+.menu li.active, .menu li:hover {
+    border-left: 3px solid #f29634;
+}
+
+.btn1 {
+    background-color: #f29634;
+    box-shadow: 0 5px 10px -4px rgb(242, 150, 52);
+}
+
+.btn2 {
+    background-color: #0b8fcf;
+    box-shadow: 0 5px 10px -4px rgb(11, 143, 207);
+}
+
+.detail_nav_menu ul li.ui-tabs-active a, .detail_nav_menu ul li:hover a {
+    color: #f29634;
+}
+
+.detail_nav_menu ul li.ui-tabs-active, .detail_nav_menu ul li:hover {
+    border-bottom: 2px solid #f29634;
+}
+
+
+
+

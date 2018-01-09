@@ -1,0 +1,52 @@
+﻿.aside {
+    right: 0;
+}
+
+.content_wrap {
+    padding-right: 270px;
+}
+
+.hidemenu .content_wrap {
+    padding-right: 0px;
+}
+
+.frame_header {
+    right: 270px;
+    left: 0;
+}
+
+.hidemenu .frame_header {
+    right: 0;
+}
+
+footer {
+    margin-left: 0;
+    margin-right: 270px;
+}
+
+.hidemenu footer {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .content_wrap {
+        padding-right: 0px;
+    }
+
+    .hidemenu .bgwhite {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .frame_header {
+        right: 0;
+    }
+
+    footer {
+        margin-right: 0;
+    }
+
+    .hidemenu footer {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,348 @@
+﻿.wdt_label 
+{
+    padding-top:39px;
+}
+
+.custom_title {
+    background-color: #0b8fcf;
+    height: 65px;
+}
+.custom_title h4{
+   font-size:20px;
+   text-align:center;
+   color:#fff;
+   padding:21px 0;
+}
+.btn {
+    border: medium none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 17px 42px;
+    margin: 0 10px;
+}
+
+    .btn:hover, .btn.active, .btn:focus {
+        color: #fff;
+    }
+
+.btn3:hover, .btn3.active, .btn3:focus {
+    color: #333;
+}
+
+.btn1 {
+    background-color: #f09537;
+    box-shadow: 0 5px 10px -4px rgb(240, 149, 55);
+}
+
+.btn2 {
+    background-color: #0b8fcf;
+    box-shadow: 0 5px 10px -4px rgb(44, 158, 214);
+}
+
+.btn3 {
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 50px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 30px;
+}
+
+.controls {
+    padding-top: 50px;
+}
+
+label.lbl_hdr {
+    color: #78909c;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.custom_chk_bx [type="checkbox"]:not(:checked) + label::before, .custom_chk_bx [type="checkbox"]:checked + label::before {
+    left: 14px;
+}
+
+.custom_chk_bx [type="checkbox"]:not(:checked) + label::after, .custom_chk_bx [type="checkbox"]:checked + label::after {
+    color: #0b8fcf;
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 16px;
+    left: 17px;
+    line-height: 100%;
+    position: absolute;
+    top: 4px;
+    transition: all 0.2s ease 0s;
+}
+
+.custom_chk_bx.wdt_label {
+    padding-top: 54px;
+    padding-bottom: 44px;
+}
+.custom_chk_bx {
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+    .custom_chk_bx.admi_chk [type="checkbox"]:not(:checked) + label::after, .custom_chk_bx.admi_chk [type="checkbox"]:checked + label::after {
+        left: 28px;
+    }
+
+    .custom_chk_bx.admi_chk [type="checkbox"]:not(:checked) + label::before, .custom_chk_bx.admi_chk [type="checkbox"]:checked + label::before {
+        margin-left: 0px;
+    }
+/****** radio button *******/
+
+
+.custom_radio {
+    padding-right: 30px;
+}
+
+    .custom_radio [type="radio"]:checked,
+    .custom_radio [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+        .custom_radio [type="radio"]:checked + label,
+        .custom_radio [type="radio"]:not(:checked) + label {
+            position: relative;
+            padding-left: 50px;
+            cursor: pointer;
+            line-height: 20px;
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+            padding-top:0px;
+        }
+
+            .custom_radio [type="radio"]:checked + label:before,
+            .custom_radio [type="radio"]:not(:checked) + label:before {
+                border-radius: 100%;
+                border-color: rgb(220, 229, 233);
+                border-style: solid;
+                border-width: 2px;
+                box-shadow: none;
+                content: "";
+                height: 24px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 23px;
+            }
+
+            .custom_radio [type="radio"]:checked + label::after, .custom_radio [type="radio"]:not(:checked) + label::after {
+                background: #0b8fcf none repeat scroll 0 0;
+                border-radius: 100%;
+                content: "";
+                height: 9px;
+                left: 7px;
+                position: absolute;
+                top: 8px;
+                transition: all 0.2s ease 0s;
+                width: 9px;
+            }
+
+            .custom_radio [type="radio"]:not(:checked) + label:after {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            .custom_radio [type="radio"]:checked + label:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+
+
+
+.bootstrap-datetimepicker-widget td a.btn span {
+    font-size: 14px;
+    color: #333;
+}
+/***************************/
+/****** switch *******/
+.tgl_switch {
+    text-align: left;
+    position:absolute;
+}
+
+    .tgl_switch input.tgl[type="checkbox"] {
+        display: none;
+    }
+
+    .tgl_switch .checkbox .tgl + label::before {
+        margin-left: -20px;
+    }
+
+    .tgl_switch .tgl + label::before {
+        background-color: #e5e7eb;
+        border: 0;
+        border-radius: 50px;
+        content: " ";
+        display: inline-block;
+        font-size: 12px;
+        height: 14px;
+        left: 0;
+        line-height: 1.5;
+        margin-bottom: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        white-space: pre;
+        width: 36px;
+    }
+
+    .tgl_switch .tgl + label::after {
+        background: #b0b9ca none repeat scroll 0 0;
+        border: 0 none;
+        border-radius: 50%;
+        box-shadow: 0.5px 0.866px 4px 0 rgba(0, 0, 0, 0.2);
+        content: " ";
+        height: 21px;
+        padding: 0;
+        position: absolute;
+        left: 0px;
+        top: -2px;
+        transition: left 0.2s ease 0s;
+        white-space: pre;
+        width: 21px;
+    }
+
+    .tgl_switch .tgl:checked + label::after {
+        left: 16px;
+        background-color: #0b8fcf;
+        box-shadow: 0.5px 0.866px 4px 0px rgba( 0, 0, 0, 0.2 );
+    }
+
+
+    .tgl_switch .tgl + label:active::before {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+    }
+
+    .tgl_switch .tgl + label {
+        -moz-user-select: none;
+        cursor: pointer;
+        left: 0px;
+        position: relative;
+    }
+
+    .tgl_switch mark {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        color: #333;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+/****** end switch *******/
+
+/* date time picker */
+
+.klvrn_dt_picker .input-group-addon:last-child {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 2px solid #dce5e9;
+    border-left: 0;
+}
+
+/* end  */
+
+.search_div *::-moz-placeholder {
+    color: #CCC;
+}
+.srch_btn {
+    border-radius: 4px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #b0b9ca;
+    width: 100%;
+    box-shadow: 0 5px 10px -4px rgb(204, 204, 204);
+}
+.add-more {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #555555;
+    padding: 0;
+}
+    .add-more .fa-plus-circle, .btn-danger .fa-minus-circle {
+        font-size: 18px;
+    }
+.btn-danger {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #F09537;
+    padding: 0;
+}
+    .btn-danger:hover, .btn-danger.focus, .btn-danger.active {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        color: #F09537;
+    }
+        .btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger.focus:active, .btn-danger:active:focus, .btn-danger:active:hover, .open > .dropdown-toggle.btn-danger.focus, .open > .dropdown-toggle.btn-danger:focus, .open > .dropdown-toggle.btn-danger:hover {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            color: #F09537;
+            border: none;
+        }
+ /*   */
+.Uploadbtn {
+    background: #b0b9ca none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 110px;
+}
+
+    .Uploadbtn .input-upload {
+        height: 100%;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+
+.Uploadbtn .fa-upload {
+    font-size: 24px;
+}
+.upld_lbl {
+    color: #333;
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight:500;
+}
+
+/* range slider */
+.rb_hdr {
+   
+    width:150px;
+     padding-right:0;
+}
+.rate_bdgt .lbl_hdr {
+    padding-bottom: 0px;
+}
+
+/* end range slider */
+
+
+@media screen and (max-width: 767px) {
+    .custom_chk_bx {
+        padding: 30px 0;
+    }
+
+    .btn {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

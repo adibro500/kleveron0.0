@@ -1,0 +1,16 @@
+﻿.dash_logo {
+    display: block;
+    background: #ffffff;
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px 0;
+    height: 75px;
+}
+
+.cmpny_logo {
+    display:none;
+}
+
+.menu_footer {
+    display:none;
+}

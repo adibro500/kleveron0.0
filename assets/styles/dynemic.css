@@ -1,0 +1,54 @@
+﻿        .theme1-col-1
+        {
+            width: 99.8%;
+            float: left;
+            margin: 0.1%;
+            min-height: 60px;
+        }
+        .theme1-col-2
+        {
+            width: 49.6%;
+            float: left;
+            margin: 0.2%;
+            min-height: 60px;
+        }
+        .theme1-col-3
+        {
+            width: 32.6%;
+            float: left;
+            margin: 0.3%;
+            min-height: 60px;
+        }
+        .theme1-col-4
+        {
+            width: 24.2%;
+            float: left;
+            margin: 0.4%;
+            min-height: 60px;
+        }
+        @media (max-width:1024px)
+        {
+            .theme1-col-1, .theme1-col-2, .theme1-col-3, .theme1-col-4
+            {
+               width: 49.6%;
+            float: left;
+            margin: 0.2%;
+            min-height: 60px;
+            }
+        }
+        @media (max-width:767px)
+        {
+            .theme1-col-1, .theme1-col-2, .theme1-col-3, .theme1-col-4
+            {
+                width: 99.8%;
+                float: left;
+                margin: 0.1%;
+                min-height: 60px;
+            }
+        
+        }
+        .social_icon 
+        {
+            position:absolute;
+            z-index:9;
+        }

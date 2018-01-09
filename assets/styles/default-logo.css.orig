@@ -1,0 +1,13 @@
+﻿.dash_logo {
+    display: block;
+
+}
+
+.cmpny_logo {
+    display:none;
+
+
+.menu_footer {
+    display:none;
+
+}
